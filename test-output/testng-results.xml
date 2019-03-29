@@ -6,6 +6,7 @@
     <groups>
     </groups>
     <test name="Default test" duration-ms="8" started-at="2019-03-29T15:04:52Z" finished-at="2019-03-29T15:04:52Z">
+    
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
