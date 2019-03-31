@@ -2,10 +2,10 @@
 <testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6" started-at="2019-03-31T17:26:22Z" finished-at="2019-03-31T17:26:22Z">
+  <suite name="Default suite" duration-ms="8" started-at="2019-03-31T18:02:40Z" finished-at="2019-03-31T18:02:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6" started-at="2019-03-31T17:26:22Z" finished-at="2019-03-31T17:26:22Z">
+    <test name="Default test" duration-ms="8" started-at="2019-03-31T18:02:40Z" finished-at="2019-03-31T18:02:40Z">
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

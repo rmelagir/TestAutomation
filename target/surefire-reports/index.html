@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-com.org.learningMaven.HelloWorldTest" class="hide-methods passed suite-com.org.learningMaven.HelloWorldTest"> (hide)</a> <!-- hide-methods passed suite-com.org.learningMaven.HelloWorldTest -->
+                      <a href="#" panel-name="suite-com.org.learningMaven.HelloWorldTest" class="show-methods passed suite-com.org.learningMaven.HelloWorldTest"> (show)</a> <!-- show-methods passed suite-com.org.learningMaven.HelloWorldTest -->
+                    </span>
+                    <div class="method-list-content passed suite-com.org.learningMaven.HelloWorldTest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.org.learningMaven.HelloWorldTest" title="com.org.learningMaven.HelloWorldTest" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-com.org.learningMaven.HelloWorldTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -102,6 +116,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-com.org.learningMaven.HelloWorldTest" class="panel com.org.learningMaven.HelloWorldTest">
+          <div class="suite-com.org.learningMaven.HelloWorldTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.org.learningMaven.HelloWorldTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.org.learningMaven.HelloWorldTest-class-passed -->
         </div> <!-- panel com.org.learningMaven.HelloWorldTest -->
         <div panel-name="test-xml-com.org.learningMaven.HelloWorldTest" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -153,11 +182,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test')
+data.setCell(0, 2, 'com.org.learningMaven.HelloWorldTest')
+data.setCell(0, 3, 39755);
 window.suiteTableData['com.org.learningMaven.HelloWorldTest']= { tableData: data, tableDiv: 'times-div-com.org.learningMaven.HelloWorldTest'}
 return data;
 }
               </script>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
               <div id="times-div-com.org.learningMaven.HelloWorldTest">
               </div> <!-- times-div-com.org.learningMaven.HelloWorldTest -->
             </div> <!-- times-div -->
@@ -182,6 +216,12 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.org.learningMaven.HelloWorldTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
