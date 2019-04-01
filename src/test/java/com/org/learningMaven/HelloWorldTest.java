@@ -3,7 +3,7 @@ package com.org.learningMaven;
 import static org.testng.Assert.assertEquals;
 import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
-
+import org.openqa.selenium.ie.InternetExplorerDriver; 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,7 +17,7 @@ public class HelloWorldTest {
 		 if (driver == null)
 	        {   
 			 System.out.println("I am here");
-	        	System.setProperty("webdriver.chrome.driver", "D:\\softwares\\chromedriver_win32\\chromedriver.exe");
+	        	System.setProperty("webdriver.chrome.driver", "D:\\softwares\\chromedriver\\chromedriver.exe");
 				driver = new ChromeDriver();
 	        	driver.manage().window().maximize();
 	     		driver.get("http://10.10.11.191:8055/login");
