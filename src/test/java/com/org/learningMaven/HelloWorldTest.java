@@ -22,7 +22,7 @@ public class HelloWorldTest {
 			 
 			// System.out.println("FF is selected");
 			// System.setProperty("webdriver.gecko.driver","D:\\softwares\\FFDRiver\\geckodriver.exe");
-	        	System.setProperty("webdriver.chrome.driver", "D:\\softwares\\chromedriver\\chromedriver.exe");
+	        	System.setProperty("webdriver.chrome.driver", "D:\\softwares\\chromedriver 72\\chromedriver.exe");
 		driver = new ChromeDriver();
 			// DesiredCapabilities cap = DesiredCapabilities.firefox();
 		   //     cap.setCapability("marionette", true);
