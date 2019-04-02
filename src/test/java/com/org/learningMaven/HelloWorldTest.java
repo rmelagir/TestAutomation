@@ -3,10 +3,12 @@ package com.org.learningMaven;
 import static org.testng.Assert.assertEquals;
 import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.ie.InternetExplorerDriver; 
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class HelloWorldTest {
 	public static WebDriver driver;
@@ -18,11 +20,15 @@ public class HelloWorldTest {
 	        {   
 			 System.out.println("I am here");
 			 
-
+			// System.out.println("FF is selected");
+			// System.setProperty("webdriver.gecko.driver","D:\\softwares\\FFDRiver\\geckodriver.exe");
 	        	System.setProperty("webdriver.chrome.driver", "D:\\softwares\\chromedriver\\chromedriver.exe");
-				driver = new ChromeDriver();
-				
-	        	driver.manage().window().maximize();
+		driver = new ChromeDriver();
+			// DesiredCapabilities cap = DesiredCapabilities.firefox();
+		   //     cap.setCapability("marionette", true);
+		   //     cap.setBrowserName("firefox");
+			// driver = new FirefoxDriver();
+	        //	driver.manage().window().maximize();
 	     		driver.get("http://10.10.11.191:8055/login");
 	     		driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);                       
 	        }
