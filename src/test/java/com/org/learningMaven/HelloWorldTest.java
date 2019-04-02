@@ -8,6 +8,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class HelloWorldTest {
@@ -23,7 +24,10 @@ public class HelloWorldTest {
 			// System.out.println("FF is selected");
 			// System.setProperty("webdriver.gecko.driver","D:\\softwares\\FFDRiver\\geckodriver.exe");
 	        	System.setProperty("webdriver.chrome.driver", "D:\\softwares\\chromedriver 72\\chromedriver.exe");
-		driver = new ChromeDriver();
+	        	ChromeOptions chromeOptions= new ChromeOptions();
+	        	chromeOptions.setBinary("C:\\Users\\rmelagir\\Downloads\\72.0.3626.81_chrome_installer");
+	        	
+	        	driver = new ChromeDriver();
 			// DesiredCapabilities cap = DesiredCapabilities.firefox();
 		   //     cap.setCapability("marionette", true);
 		   //     cap.setBrowserName("firefox");
