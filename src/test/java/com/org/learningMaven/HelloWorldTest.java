@@ -25,9 +25,9 @@ public class HelloWorldTest {
 			// System.setProperty("webdriver.gecko.driver","D:\\softwares\\FFDRiver\\geckodriver.exe");
 	        	System.setProperty("webdriver.chrome.driver", "D:\\softwares\\chromedriver 72\\chromedriver.exe");
 	        	ChromeOptions chromeOptions= new ChromeOptions();
-	        	chromeOptions.setBinary("C:\\Users\\rmelagir\\Downloads\\72.0.3626.81_chrome_installer");
+	        	chromeOptions.setBinary("C:\\Users\\rmelagir\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
 	        	
-	        	driver = new ChromeDriver();
+	        	driver = new ChromeDriver(chromeOptions);
 			// DesiredCapabilities cap = DesiredCapabilities.firefox();
 		   //     cap.setCapability("marionette", true);
 		   //     cap.setBrowserName("firefox");
